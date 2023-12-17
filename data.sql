@@ -65,3 +65,7 @@ select min(id) from user;
 select avg(id) from user;
 select sum(id) from user;
 select count(id) from user;
+
+-- group by
+select role , count(*) from user
+group by role;
