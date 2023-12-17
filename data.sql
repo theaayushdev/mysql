@@ -13,7 +13,28 @@ create table user(
 
 -- select * from user;
 SELECT * FROM user;
-UNION
 
+-- modifying table
+alter table user 
+add column phone varchar(20) not null;
+
+alter table user 
+drop column phone;
+
+-- changes the data type of the column
+alter table user 
+modify column phone varchar(20) not null;
+
+describe user; -- show table structure
+
+-- current datetime 
+select now();
+
+-- wildcards
+select * from user
+ where username like '%a%';
+-- ascending order
+select * from user 
+order by username asc;
 
 
