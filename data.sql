@@ -37,4 +37,31 @@ select * from user
 select * from user 
 order by username asc;
 
+-- and , or , not 
+select * from user 
+where username like '%a%' and email like '%a%';
 
+-- order by
+select * from user
+order by username asc;
+
+-- limit
+select * from user
+limit 2;
+ 
+-- curennt date and time
+create table timez(
+todays_date date,
+todays_time time,
+todays_datetime datetime);
+
+-- inserting time and date
+insert into timez
+ values(current_date(),current_time(),now());
+
+-- max , min , avg , sum , count 
+select max(id) from user;
+select min(id) from user;
+select avg(id) from user;
+select sum(id) from user;
+select count(id) from user;
